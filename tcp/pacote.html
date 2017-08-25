@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Pacotes</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+	</head>
+
+	<body>
+
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo center">Pacotes</a>
+				<ul class="left hide-on-med-and-down">
+					<!--
+		<li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li class="active"><a href="collapsible.html">JavaScript</a></li>
+		-->
+				</ul>
+			</div>
+		</nav>
+		<style>
+			.bloco {
+			border: 2px solid #eee;
+			line-height: 25px;
+			height: 100px;
+			font-size: 14px;
+			background-color: #f19a00;
+			color:#f19a00 ;
+			text-align:center;
+			}
+			.bit {
+			border: 1px solid #eee;
+			height: 20px;
+			font-size: 12px;
+			background-color: #9e9e9e;
+			color: white;
+			text-align:center;
+			}
+			.bloco:hover {
+			background-color: #dd2c00;
+			cursor: pointer;
+			color:white;
+			}
+			.col{
+			margin:0 !important;
+			padding:0 !important;
+			}
+			.row{
+			margin:0 !important;
+			padding:0 !important;
+			position: relative;
+			}
+			.container{
+			width:80%;
+			}
+			label{
+			float:left;
+			vertical-align: top;
+			color:white;
+			font-size: 18px;
+			margin-left:5px;
+			}
+			.bit-info{
+			position:absolute;
+			bottom:0;
+			left:0;
+			height: 18px;
+			font-size: 12px;
+			background-color: #9e9e9e;
+			color: white;
+			}
+			.backdrop{
+				background-color: gray;
+				opacity: 0.5;
+			}
+
+		</style>
+		<div class="section"/> 
+		<div class="container">
+			<div class="row">
+				<div class="col s12 bit">
+					32 bits
+				</div>		 
+			</div>
+			<div class="row">
+				<a class="tooltipped" data-position="right" data-delay="50" data-tooltip="A porta de onde será enviado o pacote">
+						<div class="col s6 bloco waves-effect waves-light">
+							<label>
+								Porta de Origem
+							</label>
+
+							<div class="col s12 bit-info">
+								16 bits
+							</div>
+						</div>
+					</a>
+					<div class="col s6 bloco waves-effect waves-light">
+						<label>
+							Porta de Destino
+						</label>
+						<div class="col s12 bit-info">
+							16 bits
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 bloco waves-effect waves-light">
+						<label>
+							Número de Sequência
+						</label>
+						<div class="col s12 bit-info">
+							32 bits
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 bloco waves-effect waves-light">
+						<label>
+							Número de Reconhecimento
+						</label>
+						<div class="col s12 bit-info">
+							32 bits
+						</div>	
+					</div>
+				</div>	
+
+				<div class="row">
+
+					<div class="col s6 wrp ">
+						<div class="col s2 bloco waves-effect waves-light">
+							<label style="font-size: 16px">
+								Tam-Cabeçalho
+							</label>
+							<div class="col s12 bit-info">
+								4 bits
+							</div>	
+						</div>
+						<div class="col s4 bloco waves-effect waves-light">
+							<label>
+								Reservado
+							</label>
+							<div class="col s12 bit-info">
+								6 bits					
+							</div>	
+						</div>
+						<div class="col s1 bloco waves-effect waves-light">
+							<label>
+								U
+							</label>
+							<div class="col s12 bit-info">
+								1 bit
+							</div>	
+						</div>
+						<div class="col s1 bloco waves-effect waves-light">
+							<label>
+								A
+							</label>
+							<div class="col s12 bit-info">
+								1 bit
+							</div>							
+						</div>
+						<div class="col s1 bloco waves-effect waves-light">
+							<label>
+								P
+							</label>
+							<div class="col s12 bit-info">
+								1 bit
+							</div>							
+						</div>
+						<div class="col s1 bloco waves-effect waves-light">
+							<label>
+								R
+							</label>
+							<div class="col s12 bit-info">
+								1 bit
+							</div>							
+						</div>
+						<div class="col s1 bloco waves-effect waves-light">
+							<label>
+								S
+							</label>
+							<div class="col s12 bit-info">
+								1 bit
+							</div>							
+						</div>
+						<div class="col s1 bloco waves-effect waves-light">
+							<label>
+								F
+							</label>
+							<div class="col s12 bit-info">
+								1 bit
+							</div>							
+						</div>
+					</div>
+					<div class="col s6 bloco waves-effect waves-light">
+						<label>
+							Tamanho da Janela
+						</label>
+						<div class="col s12 bit-info">
+							16 bits
+						</div>							
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col s6 bloco waves-effect waves-light">
+						<label>
+							CheckSum
+						</label>
+						<div class="col s12 bit-info">
+							16 bits
+						</div>	
+					</div>
+					<div class="col s6 bloco waves-effect waves-light">
+						<label>
+							Ponteiro Urgência
+						</label>
+						<div class="col s12 bit-info">
+							16 bits
+						</div>					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 bloco waves-effect waves-light">
+						<label>
+							Opções TCP
+						</label>
+						<div class="col s12 bit-info">
+							32 bits
+						</div>					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 bloco waves-effect waves-light">
+						<label>
+							Dados
+						</label>
+						<div class="col s12 bit-info">
+							variável
+						</div>	
+					</div>
+				</div>
+			</div> 
+
+		</body>
+
+	</html>
